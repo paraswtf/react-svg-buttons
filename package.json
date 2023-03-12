@@ -1,7 +1,7 @@
 {
   "name": "@paraswtf/react-svg-buttons",
   "description": "Configurable animated SVG buttons for react, fork of react-svg-buttons",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "main": "lib",
   "author": "Raphaël Benitte",
   "maintainers": [
@@ -17,9 +17,9 @@
     "url": "https://github.com/paraswtf/react-svg-buttons/issues"
   },
   "scripts": {
-    "build": "NODE_ENV=production rm -rf lib/* && babel src --no-comments --out-dir lib",
-    "watch": "NODE_ENV=development babel src --out-dir lib --watch",
-    "build:demo-lib:watch": "NODE_ENV=development babel src --out-dir demo/src/lib --watch",
+    "build": "set NODE_ENV=production rm -rf lib/* && babel src --no-comments --out-dir lib",
+    "watch": "set NODE_ENV=development babel src --out-dir lib --watch",
+    "build:demo-lib:watch": "set NODE_ENV=development babel src --out-dir demo/src/lib --watch",
     "format": "prettier --tab-width=4 --bracket-spacing --no-semi --trailing-comma es5 --single-quote --write 'src/**/*.js' 'demo/src/**/*.js'",
     "prepublish": "npm run build"
   },
