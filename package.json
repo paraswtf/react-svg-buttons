@@ -1,6 +1,6 @@
 {
 	"name": "react-svg-buttons",
-	"description": "Configurable animated SVG buttons for react",
+	"description": "Configurable animated SVG buttons for react, fork of react-svg-buttons",
 	"version": "0.4.1",
 	"main": "lib",
 	"author": {
