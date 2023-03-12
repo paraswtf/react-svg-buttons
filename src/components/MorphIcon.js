@@ -34,7 +34,7 @@ const MorphIcon = (props) => {
 	});
 
 	return (
-		<span {...omit(props, ["size", "thickness", "color", "stiffness", "damping", "type", "baseType", "hoverType"])}>
+		<span {...omit(props, ["size", "thickness", "color", "stiffness", "damping", "type", "baseType", "hoverType",'hoverEffect'])}>
 			<Motion
 				defaultStyle={defaultStyle}
 				style={style}
