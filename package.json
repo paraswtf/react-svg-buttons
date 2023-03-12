@@ -1,49 +1,50 @@
 {
-	"name": "react-svg-buttons",
-	"description": "Configurable animated SVG buttons for react, fork of react-svg-buttons",
-	"version": "0.4.1",
-	"main": "lib",
-	"author": {
-		"name": "Raphaël Benitte"
-	},
-	"maintainers": [
-		{
-			"name": "plouc"
-		},
-		{
-			"name": "paraswtf"
-		}
-	],
-	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/paraswtf/react-svg-buttons.git"
-	},
-	"bugs": {
-		"url": "https://github.com/paraswtf/react-svg-buttons/issues"
-	},
-	"scripts": {
-		"build": "NODE_ENV=production rm -rf lib/* && babel src --no-comments --out-dir lib",
-		"watch": "NODE_ENV=development babel src --out-dir lib --watch",
-		"build:demo-lib:watch": "NODE_ENV=development babel src --out-dir demo/src/lib --watch",
-		"format": "prettier --tab-width=4 --bracket-spacing --no-semi --trailing-comma es5 --single-quote --write 'src/**/*.js' 'demo/src/**/*.js'",
-		"prepublish": "npm run build"
-	},
-	"dependencies": {
-		"prop-types": "^15.5.10",
-		"react-motion": "^0.5.0"
-	},
-	"devDependencies": {
-		"babel-cli": "6.11.4",
-		"babel-core": "6.11.4",
-		"babel-preset-es2015": "6.9.0",
-		"babel-preset-react": "6.11.1",
-		"babel-preset-stage-2": "6.11.0",
-		"prettier": "^1.5.3",
-		"react": "^15.4.1"
-	},
-	"peerDependencies": {
-		"react": "^15.4.1"
-	},
-	"keywords": ["react", "react-component", "icon", "button", "ui"]
+  "name": "@paraswtf/react-svg-buttons",
+  "description": "Configurable animated SVG buttons for react, fork of react-svg-buttons",
+  "version": "0.4.1",
+  "main": "lib",
+  "author": "Raphaël Benitte",
+  "maintainers": [
+    "plouc",
+    "paraswtf"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paraswtf/react-svg-buttons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/paraswtf/react-svg-buttons/issues"
+  },
+  "scripts": {
+    "build": "NODE_ENV=production rm -rf lib/* && babel src --no-comments --out-dir lib",
+    "watch": "NODE_ENV=development babel src --out-dir lib --watch",
+    "build:demo-lib:watch": "NODE_ENV=development babel src --out-dir demo/src/lib --watch",
+    "format": "prettier --tab-width=4 --bracket-spacing --no-semi --trailing-comma es5 --single-quote --write 'src/**/*.js' 'demo/src/**/*.js'",
+    "prepublish": "npm run build"
+  },
+  "dependencies": {
+    "prop-types": "^15.5.10",
+    "react-motion": "^0.5.0"
+  },
+  "devDependencies": {
+    "babel-cli": "6.11.4",
+    "babel-core": "6.11.4",
+    "babel-preset-es2015": "6.9.0",
+    "babel-preset-react": "6.11.1",
+    "babel-preset-stage-2": "6.11.0",
+    "prettier": "^1.5.3",
+    "react": "^15.4.1"
+  },
+  "peerDependencies": {
+    "react": "^15.4.1"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "icon",
+    "button",
+    "ui"
+  ],
+  "homepage": "https://github.com/paraswtf/react-svg-buttons#readme"
 }
