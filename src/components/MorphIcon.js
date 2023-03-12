@@ -7,7 +7,6 @@
  * file that was distributed with this source code.
  */
 import React from "react";
-import PropTypes from "prop-types";
 import { Motion, spring } from "react-motion";
 import { pathCommands } from "../lib/pathHelper";
 import clamp from "../lib/clamp";
@@ -276,15 +275,6 @@ const MorphIcon = (props) => {
 			</Motion>
 		</span>
 	);
-};
-
-MorphIcon.propTypes = {
-	size: PropTypes.number.isRequired,
-	thickness: PropTypes.number.isRequired,
-	color: PropTypes.string.isRequired,
-	stiffness: PropTypes.number.isRequired,
-	damping: PropTypes.number.isRequired,
-	type: PropTypes.oneOf(Object.keys(iconTypes))
 };
 
 export default MorphIcon;

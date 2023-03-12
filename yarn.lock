@@ -1725,7 +1725,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.10, prop-types@^15.5.8:
+prop-types@^15.5.8:
   version "15.5.10"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.5.10.tgz"
   integrity sha512-vCFzoUFaZkVNeFkhK1KbSq4cn97GDrpfBt9K2qLkGnPAEFhEv3M61Lk5t+B7c0QfMLWo0fPkowk/4SuXerh26Q==

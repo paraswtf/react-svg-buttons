@@ -7,7 +7,6 @@
  * file that was distributed with this source code.
  */
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 import MorphIcon from './MorphIcon'
 
 class HoverMorphIcon extends Component {
@@ -34,11 +33,6 @@ class HoverMorphIcon extends Component {
             />
         )
     }
-}
-
-HoverMorphIcon.propTypes = {
-    baseType: PropTypes.string.isRequired,
-    hoverType: PropTypes.string.isRequired,
 }
 
 export default HoverMorphIcon

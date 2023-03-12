@@ -7,7 +7,6 @@
  * file that was distributed with this source code.
  */
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 import MorphIcon from "../MorphIcon";
 import omit from "../../lib/omit";
 
@@ -66,11 +65,5 @@ class NavButton extends Component {
 		);
 	}
 }
-
-NavButton.propTypes = {
-	direction: PropTypes.oneOf(["up", "right", "down", "left"]),
-	opened: PropTypes.bool.isRequired,
-	hoverEffect: PropTypes.bool.isRequired
-};
 
 export default NavButton;

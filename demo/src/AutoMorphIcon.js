@@ -7,14 +7,8 @@
  * file that was distributed with this source code.
  */
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 
 export default class AutoMorphIcon extends Component {
-	static propTypes = {
-		types: PropTypes.array.isRequired,
-		interval: PropTypes.number.isRequired
-	};
-
 	constructor(props) {
 		super(props);
 

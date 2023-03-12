@@ -7,7 +7,6 @@
  * file that was distributed with this source code.
  */
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 import MorphIcon from "../MorphIcon";
 import omit from "../../lib/omit";
 
@@ -53,10 +52,5 @@ class PlayButton extends Component {
 		);
 	}
 }
-
-PlayButton.propTypes = {
-	isPlaying: PropTypes.bool.isRequired,
-	circle: PropTypes.bool.isRequired
-};
 
 export default PlayButton;
