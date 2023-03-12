@@ -30,7 +30,7 @@ class NavButton extends Component {
 	}
 
 	render() {
-		const { direction = "down", opened = false } = this.props;
+		const { direction = "down", opened = false, hoverEffect = false } = this.props;
 		const { hover } = this.state;
 
 		let type;
@@ -59,8 +59,8 @@ class NavButton extends Component {
 		return (
 			<MorphIcon
 				{...omit(this.props, ["direction", "opened"])}
-				onMouseEnter={this.handleMouseEnter}
-				onMouseLeave={this.handleMouseLeave}
+				onMouseEnter={hoverEffect ? this.handleMouseEnter : undefined}
+				onMouseLeave={hoverEffect ? this.handleMouseLeave : undefined}
 				type={type}
 			/>
 		);
@@ -69,7 +69,8 @@ class NavButton extends Component {
 
 NavButton.propTypes = {
 	direction: PropTypes.oneOf(["up", "right", "down", "left"]),
-	opened: PropTypes.bool.isRequired
+	opened: PropTypes.bool.isRequired,
+	hoverEffect: PropTypes.bool.isRequired
 };
 
 export default NavButton;
