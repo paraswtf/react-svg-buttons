@@ -1,7 +1,7 @@
 {
   "name": "@paraswtf/react-svg-buttons",
   "description": "Configurable animated SVG buttons for react, fork of react-svg-buttons",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "main": "lib",
   "author": "Raphaël Benitte",
   "maintainers": [
