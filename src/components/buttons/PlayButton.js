@@ -6,51 +6,51 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-import React, { Component } from "react";
-import MorphIcon from "../MorphIcon";
-import omit from "../../lib/omit";
+import React, { Component } from 'react'
+import MorphIcon from '../MorphIcon'
+import omit from '../../lib/omit'
 
 class PlayButton extends Component {
-	constructor(props) {
-		super(props);
+    constructor(props) {
+        super(props)
 
-		this.handleMouseEnter = this.handleMouseEnter.bind(this);
-		this.handleMouseLeave = this.handleMouseLeave.bind(this);
+        this.handleMouseEnter = this.handleMouseEnter.bind(this)
+        this.handleMouseLeave = this.handleMouseLeave.bind(this)
 
-		this.state = { hover: false };
-	}
+        this.state = { hover: false }
+    }
 
-	handleMouseEnter() {
-		this.setState({ hover: true });
-	}
+    handleMouseEnter() {
+        this.setState({ hover: true })
+    }
 
-	handleMouseLeave() {
-		this.setState({ hover: false });
-	}
+    handleMouseLeave() {
+        this.setState({ hover: false })
+    }
 
-	render() {
-		const { isPlaying = false, circle = false } = this.props;
-		const { hover } = this.state;
+    render() {
+        const { isPlaying = false, circle = false } = this.props
+        const { hover } = this.state
 
-		let type;
-		if (hover) {
-			type = isPlaying ? "pauseSparks" : "playSparks";
-		} else {
-			type = isPlaying ? "pause" : "play";
-			if (circle) {
-				type = `${type}Circle`;
-			}
-		}
+        let type
+        if (hover) {
+            type = isPlaying ? 'pauseSparks' : 'playSparks'
+        } else {
+            type = isPlaying ? 'pause' : 'play'
+            if (circle) {
+                type = `${type}Circle`
+            }
+        }
 
-		return (
-			<MorphIcon
-				{...omit(this.props, ["isPlaying", "circle"])}
-				onMouseEnter={this.handleMouseEnter}
-				onMouseLeave={this.handleMouseLeave}
-				type={type}
-			/>
-		);
-	}
+        return (
+            <MorphIcon
+                {...omit(this.props, ['isPlaying', 'circle'])}
+                onMouseEnter={this.handleMouseEnter}
+                onMouseLeave={this.handleMouseLeave}
+                type={type}
+            />
+        )
+    }
 }
 
-export default PlayButton;
+export default PlayButton

@@ -6,29 +6,29 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-import React, { Component } from "react";
+import React, { Component } from 'react'
 
 export default class AutoMorphIcon extends Component {
-	constructor(props) {
-		super(props);
+    constructor(props) {
+        super(props)
 
-		this.state = { step: 0 };
-	}
+        this.state = { step: 0 }
+    }
 
-	componentWillMount() {
-		const { types, interval = 1000 } = this.props;
+    componentWillMount() {
+        const { types, interval = 1000 } = this.props
 
-		setInterval(() => {
-			const { step } = this.state;
+        setInterval(() => {
+            const { step } = this.state
 
-			this.setState({ step: step < types.length - 1 ? step + 1 : 0 });
-		}, interval);
-	}
+            this.setState({ step: step < types.length - 1 ? step + 1 : 0 })
+        }, interval)
+    }
 
-	render() {
-		const { children, types } = this.props;
-		const { step } = this.state;
+    render() {
+        const { children, types } = this.props
+        const { step } = this.state
 
-		return React.cloneElement(children, { type: types[step] });
-	}
+        return React.cloneElement(children, { type: types[step] })
+    }
 }
